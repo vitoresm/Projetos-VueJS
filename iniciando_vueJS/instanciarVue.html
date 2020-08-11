@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue-JS</title>
+
+<body>
+    <div class="" id="app">
+        <input type="text" v-model="variavel">
+        {{variavel}}
+        <br>
+        <input type="text" v-model="variavel2">
+        {{variavel2}}
+        <br>
+        {{parseInt(variavel)+ parseInt(variavel2)}}
+    </div> 
+    <br>
+
+
+
+<!--Development version vueJS-->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17"></script>
+
+
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            variavel: 0,
+            variavel2: 0
+        }
+    })
+</script>
+</body>
+</html>
